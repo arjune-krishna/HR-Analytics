@@ -1,8 +1,11 @@
 ## Interactive HR Analytics Dashboard with Python – Streamlit
 Analytics dashboard built with Python and Streamlit.
 
+## Demo 
+https://arjune-krishna-hr-analytics-main-gu5bi5.streamlitapp.com/
+
 ## Business Objective:
-<b>Build an interative dashboard for HR department with key metrics.</b>
+Build an interative dashboard for HR department with key metrics
 
 ## Data provided:
 * Employees DB file with the following table schema
@@ -17,9 +20,6 @@ Analytics dashboard built with Python and Streamlit.
 * `streamlit`
 * `plotly`
 * `pandas`
-
-## Demo 
-https://arjune-krishna-hr-analytics-main-gu5bi5.streamlitapp.com/
 
 ## Screenshot
 ![Dashboard Screenshot](https://i.ibb.co/j6HMrSs/Screenshot-2.png)
