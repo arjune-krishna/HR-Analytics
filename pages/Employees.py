@@ -82,9 +82,11 @@ with column4:
     st.metric(label="👶Date of Birth", value=f"{dob}")
 
 with column5:
-    #Current Salary
-    current_salary = work_salary.iloc[-1].salary
-    st.metric(label="💵 Current Salary", value=f"${current_salary}")
+    try:
+        current_salary = work_salary.iloc[-1].salary
+        st.metric(label="💵 Current Salary", value=f"${current_salary}")
+    except:
+        st.metric(label="💵 Current Salary", value=f"Salary Unavailable")
 
 
 
