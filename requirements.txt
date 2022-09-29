@@ -139,4 +139,3 @@ widgetsnbextension==4.0.3
 win-inet-pton==1.1.0
 wincertstore==0.2
 yellowbrick==1.5
-zipp==3.8.1
