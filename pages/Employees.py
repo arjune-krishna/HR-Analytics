@@ -35,7 +35,9 @@ dept_employees = dept_employees.merge(departments, left_on='dept_no', right_on='
 dept_manager= dept_manager.merge(departments, left_on='dept_no', right_on='dept_no')
 
 try:
-    selected_employee = st.number_input("Select the Employee:", 10001, 499999)
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        selected_employee = st.number_input("Select the Employee:", 10001, 499999)
 
     col1, col2, col3 = st.columns(3)
     with col1:
