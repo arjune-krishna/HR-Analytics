@@ -23,7 +23,9 @@ https://arjune-krishna-hr-analytics-main-gu5bi5.streamlitapp.com/
 ## Steps:
 * Dumped the DB file to MySQLWorkbench.
 * `my-sql-connector` to pull data from DB and convereted it to csv files.
-* Python for data cleaning and Streamlit for Deployment.
+* Python for data cleaning 
+* Plotly for Charts
+* Streamlit for Deployment.
 
 ## Libraries primarily used:
 * `streamlit`
@@ -36,5 +38,5 @@ https://arjune-krishna-hr-analytics-main-gu5bi5.streamlitapp.com/
 
 ## Author
 - <b> Arjune Krishna TS </b>
-- LinkedIn - https://www.linkedin.com/in/arjune-krishna/
-- Twitter - https://twitter.com/bce3227
+- <b> LinkedIn </b> - https://www.linkedin.com/in/arjune-krishna/
+- <b> Twitter </b> - https://twitter.com/bce3227
