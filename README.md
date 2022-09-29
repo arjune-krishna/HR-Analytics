@@ -33,8 +33,8 @@ https://arjune-krishna-hr-analytics-main-gu5bi5.streamlitapp.com/
 * `pandas`
 
 ## Screenshot
-![Dashboard Screenshot](https://i.ibb.co/j6HMrSs/Screenshot-2.png)
-![Dashboard Screenshot 2](https://i.ibb.co/5609P5n/Screenshot-3.png)
+![Dashboard Screenshot](https://i.ibb.co/VYGGhHd/screencapture-arjune-krishna-hr-analytics-main-gu5bi5-streamlitapp-2022-09-29-22-18-43.png)
+![Dashboard Screenshot 2](https://i.ibb.co/ySR668D/screencapture-arjune-krishna-hr-analytics-main-gu5bi5-streamlitapp-Employees-2022-09-29-22-17-12.png)
 
 ## Author
 - <b> Arjune Krishna TS </b>
