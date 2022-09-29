@@ -89,12 +89,6 @@ with column5:
 
 
 
-
-st.caption("Employees number range between 10001 and 499999")
-
-
-
-
 if work_salary.empty:
     print('Sorry! No Salary records found')
 else:
