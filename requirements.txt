@@ -110,7 +110,7 @@ Send2Trash==1.8.0
 setuptools==63.4.1
 sip==6.6.2
 six==1.16.0
-smmap==5.0.0
+smmap==3.0.1
 sniffio==1.2.0
 soupsieve==2.3.1
 stack-data==0.2.0
