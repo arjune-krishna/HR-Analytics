@@ -5,7 +5,16 @@ Analytics dashboard built with Python and Streamlit.
 https://arjune-krishna-hr-analytics-main-gu5bi5.streamlitapp.com/
 
 ## Business Objective:
-Build an interative dashboard for HR department with key metrics
+<b>Build an interative dashboard for HR department.</b> </br>
+</br>
+<b>Key Metrics to Report</b>
+* Active Employees
+* Median Salary
+* Department Manager
+* Employees Gender (in %)
+* Average Hike vs Working Year
+* Churn Rate per Year
+* Employee's Experience When Churned
 
 ## Data provided:
 * Employees DB file with the following table schema
