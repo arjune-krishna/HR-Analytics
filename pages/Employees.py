@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.offline as pyo
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
+from numpy import inf
 
 departments = pd.read_csv('departments.csv')
 dept_employees = pd.read_csv('dept_emp.csv')
@@ -35,9 +36,7 @@ dept_employees = dept_employees.merge(departments, left_on='dept_no', right_on='
 dept_manager= dept_manager.merge(departments, left_on='dept_no', right_on='dept_no')
 
 try:
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        selected_employee = st.number_input("Select the Employee:", 10001, 499999)
+    selected_employee = st.number_input("Select the Employee:", 10001, 499999)
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -58,7 +57,7 @@ try:
         work_salary['to_date'] = work_salary['to_date'].astype(str).str.replace('01-01-9999', '')
         work_salary['from_date'] = pd.to_datetime(work_salary['from_date'], infer_datetime_format=True)
         work_salary['to_date'] = work_salary['to_date'].str.split('-').apply(clean_row)
-        work_salary['from_date'] = work_salary['from_date'].rank()
+        work_salary['from_date_rank'] = work_salary['from_date'].rank()
 
 
 
@@ -109,7 +108,7 @@ try:
         work_salary[['salary', 'from_date', 'to_date']] \
             .set_axis(['Salary', 'From', 'To'], axis=1)
 
-        fig = go.Figure([go.Scatter(x=work_salary['from_date'], y=work_salary['salary'], mode='lines+markers', marker={'color': 'rgb(255, 51, 51)'}, 
+        fig = go.Figure([go.Scatter(x=work_salary['from_date_rank'], y=work_salary['salary'], mode='lines+markers', marker={'color': 'rgb(255, 51, 51)'}, 
         name='', hovertemplate='<br>Year: %{x}<br>Salary: %{y}<br>')])
 
 
@@ -126,6 +125,27 @@ try:
 
         st.markdown("Employee's Work History")
         st.table(work_history_output)
+        
+
+        st.markdown("Salary Records")
+
+        work_salary["from_date"] = work_salary["from_date"] .dt.strftime("%Y-%m-%d")
+        work_salary['salary_py'] = work_salary['salary'].shift().fillna(0)
+        work_salary['salary_growth'] = work_salary['salary'] - work_salary['salary_py']
+        work_salary['salary_growth_in_perc'] = round((work_salary['salary_growth']/work_salary['salary_py'])*100, 2)
+        work_salary['salary_growth_in_perc'] = work_salary['salary_growth_in_perc'].replace(inf, 0)
+        work_salary["from_date_rank"] = work_salary["from_date_rank"].astype(int)
+
+        df_salary = work_salary[["salary", "from_date", "to_date", "salary_growth", "salary_growth_in_perc"]] \
+                    .set_axis(["Salary", "From", "To", "Salary Growth", "Salary Growth in %"], axis=1)
+
+        st.table(df_salary)
+
+
+
+
+
 except ValueError:
     st.error("Please enter a valid employee number")
-  
+    
+
