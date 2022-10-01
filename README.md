@@ -1,5 +1,5 @@
-## Interactive HR Analytics Dashboard with Python – Streamlit
-Analytics dashboard built with Python and Streamlit.
+## HR Analytics Dashboard with Python – Streamlit
+In this project, I've analyzed the data of employees, managers, titles and their respective salaries, departments in the organization and built a dashboard to display key metrics for the HR department.
 
 Live - https://arjune-krishna-hr-analytics-main-gu5bi5.streamlitapp.com/
 
@@ -28,17 +28,36 @@ Live - https://arjune-krishna-hr-analytics-main-gu5bi5.streamlitapp.com/
 └── README.md                               : Report
 ```
 
-## Business Objective:
-<b>Build an interative dashboard for HR department.</b> </br>
+## HR Analytics:
+
+Human resources (HR) is the division of a business that is charged with finding, screening, recruiting, and training job applicants. It also administers employee-benefit programs.
+
+HR plays a key role in helping companies deal with a fast-changing business environment and a greater demand for quality employees in the 21st century.
+
+I've built a dashboard for the HR department where they can get a summary of each department and each employee in the organization.
+
+<b>Objective</b>
 </br>
-<b>Key Metrics to Report</b>
-* Active Employees
-* Median Salary
-* Department Manager
-* Employees Gender (in %)
-* Average Hike vs Working Year
-* Churn Rate per Year
-* Employee's Experience When Churned
+1. Department Page
+    - Active Employees 
+    - Median Salary 
+    - Department Salary in % 
+    - Employees Gender (in %) 
+    - Average Hike vs Working Year 
+    - Churn Rate per Year 
+    - Employee's Experience When Churned 
+
+2. Employee Page
+    - Name 
+    - Gender 
+    - Department 
+    - Date of Birth 
+    - Current Salary 
+    - Salary Chart 
+    - Employee's Work History 
+    - Employee's Salary Records 
+
+
 
 ## Data provided:
 * Employees DB file with the following table schema
