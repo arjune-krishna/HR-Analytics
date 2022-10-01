@@ -36,26 +36,63 @@ HR plays a key role in helping companies deal with a fast-changing business envi
 
 I've built a dashboard for the HR department where they can get a summary of each department and each employee in the organization.
 
-<b>Objective</b>
-</br>
-1. Department Page
-    - Active Employees 
-    - Median Salary 
-    - Department Salary in % 
-    - Employees Gender (in %) 
-    - Average Hike vs Working Year 
-    - Churn Rate per Year 
-    - Employee's Experience When Churned 
+## Objective
+### Department Page - (Page 1)
+> <b>"Select a Department" Dropdown Menu:</b>
+We're presented with the option to select the department for analysis from a list of departments in the organizations.
+- `Customer Service`
+- `Development`
+- `Finance`
+- `Human Resources`
+- `Marketing`
+- `Production`
+- `Quality Management`
+- `Research`
+- `Sales`
 
-2. Employee Page
-    - Name 
-    - Gender 
-    - Department 
-    - Date of Birth 
-    - Current Salary 
-    - Salary Chart 
-    - Employee's Work History 
-    - Employee's Salary Records 
+> <b>Active Employees:</b> Gives us the total number of active employees in the organization
+
+> <b>Median Salary:</b> Calculates the median salary of all the employees in the department
+
+> <b>Department Salary in %:</b> `(Total Salary Paid to All The Employees in the Department / Total Salary) * 100`
+
+> <b>Employees Gender (in %):</b> % of Male and Female Employees in the Department ("Doughnut Chart")
+
+> <b>Average Hike vs Working Year:</b> YoY Average Hike in Salary of all the Employees in the Department ("Line Chart")
+
+> <b>Churn Rate per Year:</b> % of Employees churning each year. ("Line Chart")
+
+> <b>Employee's Experience When Churned:</b> Average Employees Experience (in yrs) when churned. ("Bar Chart")
+
+</br>
+
+### Employee Page - (Page 2)
+> <b>"Enter a Employee Number" Input field:</b> We can enter a employee number
+- `Employees number range between 10001 and 499999`
+
+> <b>Name:</b> Name of the employee
+
+> <b>Gender:</b> Gender of the employee
+
+> <b>Department:</b> Department of the employee
+
+> <b>Date of Birth:</b> Date of Birth of the employee
+
+> <b>Current Salary:</b> Current Salary of the employee
+
+> <b>Salary Chart:</b> Employee's salary YoY ("Line Chart")
+
+> <b>Employee's Work History:</b> List of all the departments where the employee worked previously with their respective from and to dates.
+- `Department Name `
+- `From`
+- `To`
+
+> <b>Employee's Salary Records:</b> List of all the salary records of the employee since joining the organization and YoY Hike.
+- `Salary` 
+- `From`
+- `To`
+- `Salary Growth`
+- `Salary Growth in %`
 
 
 
