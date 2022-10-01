@@ -113,8 +113,10 @@ We're presented with the option to select the department for analysis from a lis
 * `pandas`
 
 ## Screenshot
-![Dashboard Screenshot](https://i.ibb.co/VYGGhHd/screencapture-arjune-krishna-hr-analytics-main-gu5bi5-streamlitapp-2022-09-29-22-18-43.png)
-![Dashboard Screenshot 2](https://i.ibb.co/ySR668D/screencapture-arjune-krishna-hr-analytics-main-gu5bi5-streamlitapp-Employees-2022-09-29-22-17-12.png)
+> **Departments Page**
+- ![Dashboard Screenshot](https://i.ibb.co/VYGGhHd/screencapture-arjune-krishna-hr-analytics-main-gu5bi5-streamlitapp-2022-09-29-22-18-43.png)
+> **Employees Page**
+- ![Dashboard Screenshot 2](https://i.ibb.co/7pjPJ1F/screencapture-arjune-krishna-hr-analytics-main-gu5bi5-streamlitapp-Employees-2022-10-01-12-37-34.png)
 
 ## Author
 - <b> Arjune Krishna TS </b>
